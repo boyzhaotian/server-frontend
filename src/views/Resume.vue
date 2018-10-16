@@ -6,7 +6,7 @@
 <style scoped>
 .resume {
     height: 100vh;
-    overflow: auto;
+    overflow: scroll;
 }
 .resumeFrame {
     width: 100%;
