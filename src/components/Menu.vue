@@ -3,15 +3,15 @@
         <a href="#" class="nav-toggle" :class="{ active: open }" @click="toggleMenu"><i></i></a>
         <aside id="aside" role="complementary" class="border js-fullheight">
 
-            <h1 id="logo"><a href="home">赵大仁</a></h1>
+            <h1 id="logo"><a @click="go('home')">赵大仁</a></h1>
             <nav id="main-menu" role="navigation">
                 <ul>
-                    <li :class="{ active: checkPath('home') }"><a href="home">Home主页</a></li>
-                    <li :class="{ active: checkPath('resume') }"><a href="resume">Resume简历</a></li>
-                    <li :class="{ active: checkPath('blog') }"><a href="blog">Blog博客</a></li>
-                    <li :class="{ active: checkPath('portfolio') }"><a href="portfolio">Portfolio作品集</a></li>
-                    <li :class="{ active: checkPath('about') }"><a href="about">About关于</a></li>
-                    <li :class="{ active: checkPath('contact') }"><a href="contact">Contact联系方式</a></li>
+                    <li :class="{ active: checkPath('home') }" @click="go('home')"><a @click="go('home')">Home主页</a></li>
+                    <li :class="{ active: checkPath('resume') }" @click="go('resume')"><a @click="go('resume')">Resume简历</a></li>
+                    <li :class="{ active: checkPath('blog') }" @click="go('blog')"><a @click="go('blog')">Blog博客</a></li>
+                    <li :class="{ active: checkPath('portfolio') }" @click="go('portfolio')"><a @click="go('portfolio')">Portfolio作品集</a></li>
+                    <li :class="{ active: checkPath('about') }" @click="go('about')"><a @click="go('about')">About关于</a></li>
+                    <li :class="{ active: checkPath('contact') }" @click="go('contact')"><a @click="go('contact')">Contact联系方式</a></li>
                 </ul>
             </nav>
 
@@ -42,6 +42,10 @@ export default {
         checkPath(path) {
           let isIndex = path === 'home' && this.$route.path === '/'
           return this.$route.path.indexOf(path) > -1 || isIndex
+        },
+        go(path) {
+          this.$router.push(`/${path}`)
+          setTimeout(this.closeMenu, 500);
         },
         toggleMenu() {
             this.open ? this.closeMenu() : this.openMenu()
