@@ -3,7 +3,7 @@
         <a href="#" class="nav-toggle" :class="{ active: open }" @click="toggleMenu"><i></i></a>
         <aside id="aside" role="complementary" class="border js-fullheight">
 
-            <h1 id="logo"><a href="index.html">赵大仁</a></h1>
+            <h1 id="logo"><a href="index">赵大仁</a></h1>
             <nav id="main-menu" role="navigation">
                 <ul>
                     <li class="active"><a href="index">Home主页</a></li>
@@ -35,6 +35,9 @@ export default {
             open: false
         }
     },
+    mounted() {
+        this.mobileMenuOutsideClick()
+    },
     methods: {
         toggleMenu() {
             this.open ? this.closeMenu() : this.openMenu()
@@ -46,6 +49,12 @@ export default {
         closeMenu() {
             this.open = false
             document.getElementsByTagName('body')[0].className = ''
+        },
+        mobileMenuOutsideClick() {
+            document.body.click(()=>{
+              
+            })
+            window.onscroll = () => this.closeMenu()
         }
     }
 }

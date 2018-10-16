@@ -10,21 +10,39 @@
 </template>
 <script>
 import Menu from '@/components/Menu'
+import { fullHeight } from '@/utils.js'
 export default {
   components: {
     Menu
+  },
+  mounted() {
+    this.init()
+  },
+  methods: {
+    init() {
+      console.log(1,fullHeight);
+      fullHeight()
+    }
   }
 }
 </script>
 
 
 <style lang="scss">
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 #nav {
   padding: 30px;
@@ -51,6 +69,11 @@ export default {
 *	Edit this section
 *
 * ======================================================= */
+* {
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+  -webkit-tap-highlight-color:transparent;
+  outline: none;
+}
 body {
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 300;
@@ -343,16 +366,16 @@ figure figcaption {
 #hero .btn.btn-primary {
   padding: 14px 30px !important;
 }
-#hero .flexslider {
+#hero .swiper-container {
   border: none;
   z-index: 1;
   margin-bottom: 0;
 }
-#hero .flexslider .slides {
+#hero .swiper-container .swiper-wrapper {
   position: relative;
   overflow: hidden;
 }
-#hero .flexslider .slides .overlay {
+#hero .swiper-container .swiper-wrapper .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -361,63 +384,63 @@ figure figcaption {
   content: '';
   background: rgba(0, 0, 0, 0.3);
 }
-#hero .flexslider .slides li {
+#hero .swiper-container .swiper-wrapper span {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
   min-height: 500px;
   position: relative;
 }
-#hero .flexslider .flex-control-nav {
+#hero .swiper-container .swiper-pagination {
   bottom: 20px;
   z-index: 1000;
+  left: auto;
   right: 20px;
   float: right;
   width: auto;
+  position: absolute;
 }
-#hero .flexslider .flex-control-nav li {
-  display: block;
-  margin-bottom: 10px;
-}
-#hero .flexslider .flex-control-nav li a {
-  background: rgba(255, 255, 255, 0.2);
+#hero .swiper-container .swiper-pagination span {
+  background: white;
   box-shadow: none;
   width: 12px;
   height: 12px;
+  display: block;
   cursor: pointer;
+  margin-bottom: 10px;
 }
-#hero .flexslider .flex-control-nav li a.flex-active {
+#hero .swiper-container .swiper-pagination span.swiper-pagination-bullet-active {
   cursor: pointer;
   background: transparent;
   border: 2px solid #228896;
 }
-#hero .flexslider .flex-direction-nav {
+#hero .swiper-container .flex-direction-nav {
   display: none;
 }
-#hero .flexslider .slider-text {
+#hero .swiper-container .slider-text {
   display: table;
   opacity: 0;
   min-height: 500px;
   z-index: 9;
 }
-#hero .flexslider .slider-text > .slider-text-inner {
+#hero .swiper-container .slider-text > .slider-text-inner {
   display: table-cell;
   vertical-align: middle;
   min-height: 700px;
   padding: 2em;
 }
 @media screen and (max-width: 768px) {
-  #hero .flexslider .slider-text > .slider-text-inner {
+  #hero .swiper-container .slider-text > .slider-text-inner {
     text-align: center;
   }
 }
-#hero .flexslider .slider-text > .slider-text-inner h1, #hero .flexslider .slider-text > .slider-text-inner h2 {
+#hero .swiper-container .slider-text > .slider-text-inner h1, #hero .swiper-container .slider-text > .slider-text-inner h2 {
   margin: 0;
   padding: 0;
   color: white;
   font-family: "Roboto", Arial, sans-serif;
 }
-#hero .flexslider .slider-text > .slider-text-inner h1 {
+#hero .swiper-container .slider-text > .slider-text-inner h1 {
   margin-bottom: 20px;
   font-size: 45px;
   line-height: 1.3;
@@ -425,38 +448,38 @@ figure figcaption {
   font-family: "Roboto", Arial, sans-serif;
 }
 @media screen and (max-width: 768px) {
-  #hero .flexslider .slider-text > .slider-text-inner h1 {
+  #hero .swiper-container .slider-text > .slider-text-inner h1 {
     font-size: 28px;
   }
 }
-#hero .flexslider .slider-text > .slider-text-inner h2 {
+#hero .swiper-container .slider-text > .slider-text-inner h2 {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 30px;
   font-weight: 300;
 }
-#hero .flexslider .slider-text > .slider-text-inner h2 a {
+#hero .swiper-container .slider-text > .slider-text-inner h2 a {
   color: rgba(34, 136, 150, 0.8);
   border-bottom: 1px solid rgba(34, 136, 150, 0.7);
 }
-#hero .flexslider .slider-text > .slider-text-inner .heading-section {
+#hero .swiper-container .slider-text > .slider-text-inner .heading-section {
   font-size: 50px;
 }
 @media screen and (max-width: 768px) {
-  #hero .flexslider .slider-text > .slider-text-inner .heading-section {
+  #hero .swiper-container .slider-text > .slider-text-inner .heading-section {
     font-size: 30px;
   }
 }
-#hero .flexslider .slider-text > .slider-text-inner s
+#hero .swiper-container .slider-text > .slider-text-inner s
 .lead {
   font-size: 20px;
   color: #fff;
 }
-#hero .flexslider .slider-text > .slider-text-inner s
+#hero .swiper-container .slider-text > .slider-text-inner s
 .lead .icon-heart {
   color: #d9534f;
 }
-#hero .flexslider .slider-text > .slider-text-inner .btn {
+#hero .swiper-container .slider-text > .slider-text-inner .btn {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -465,15 +488,15 @@ figure figcaption {
   border: none;
   font-weight: 500;
 }
-#hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn {
+#hero .swiper-container .slider-text > .slider-text-inner .btn.btn-learn {
   background: #fff;
   color: #000;
 }
-#hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn:hover {
+#hero .swiper-container .slider-text > .slider-text-inner .btn.btn-learn:hover {
   color: #fff;
 }
 @media screen and (max-width: 768px) {
-  #hero .flexslider .slider-text > .slider-text-inner .btn {
+  #hero .swiper-container .slider-text > .slider-text-inner .btn {
     width: 100%;
   }
 }
