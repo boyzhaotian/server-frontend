@@ -1,6 +1,6 @@
 <template>
     <div class="menu">
-        <a href="#" class="nav-toggle" :class="{ active: open }" @click="toggleMenu"><i></i></a>
+        <a href="#" class="nav-toggle" :class="{ active: open }" @click="openMenu"><i></i></a>
         <aside id="aside" role="complementary" class="border js-fullheight">
 
             <h1 id="logo"><a @click="go('home')">赵大仁</a></h1>
@@ -19,7 +19,7 @@
                 <p>Copyright &copy; 2017.Sky__zt All rights reserved.</p>
                 <ul>
                     <li><a href="#"><i class="icon-facebook2"></i></a></li>
-                    <li><a href="#"><i class="icon-twitter2"></i></a></li>
+                    <li><a href="https://twitter.com/boyzhaotian"><i class="icon-twitter2"></i></a></li>
                     <li><a href="#"><i class="icon-instagram"></i></a></li>
                     <li><a href="#"><i class="icon-linkedin2"></i></a></li>
                 </ul>
@@ -29,70 +29,74 @@
     </div>
 </template>
 <script>
+import Swiper from 'swiper'
 export default {
     data() {
-        return {
-            open: false
-        }
+      return {
+        menuSwiper: Object,
+        open: true
+      }
     },
     mounted() {
-        this.mobileMenuOutsideClick()
+      this.init()
     },
     methods: {
-        checkPath(path) {
-          let isIndex = path === 'home' && this.$route.path === '/'
-          return this.$route.path.indexOf(path) > -1 || isIndex
-        },
-        go(path) {
-          this.$router.push(path)
-          setTimeout(this.closeMenu, 500);
-        },
-        toggleMenu() {
-            this.open ? this.closeMenu() : this.openMenu()
-        },
-        openMenu() {
-            this.open = true
-            document.getElementsByTagName('body')[0].className = 'offcanvas'
-        },
-        closeMenu() {
-            this.open = false
-            document.getElementsByTagName('body')[0].className = ''
-        },
-        mobileMenuOutsideClick() {
-            document.getElementById('main').onclick = () => {
-              this.open&&this.closeMenu()
-            }
-            window.onscroll = () => this.closeMenu()
-        }
+      checkPath(path) {
+        let isIndex = path === 'home' && this.$route.path === '/'
+        return this.$route.path.indexOf(path) > -1 || isIndex
+      },
+      go(path) {
+        this.$router.push(path)
+        setTimeout(this.closeMenu, 500);
+      },
+      toggleMenu() {
+          this.open ? this.closeMenu() : this.openMenu()
+      },
+      openMenu() {
+          this.open = true
+          this.menuSwiper.slidePrev()
+      },
+      closeMenu() {
+          this.open = false
+          this.menuSwiper.slideNext()
+      },
+      init() {
+
+        var menuButton = document.querySelector('.nav-toggle');
+        this.menuSwiper = new Swiper('#app', {
+          slidesPerView: 'auto',
+          initialSlide: this.open ? 0 : 1,
+          resistanceRatio: 0,
+          slideToClickedSlide: true,
+          noSwiping: false,
+          preventInteractionOnTransition: true,
+          on: {
+            init: function () {
+              var slider = this;
+              menuButton.addEventListener('click', function () {
+                if (slider.activeIndex === 0) {
+                  slider.slideNext();
+                } else {
+                  slider.slidePrev();
+                }
+              }, true);
+            },
+            slideChange: function () {
+              var slider = this;
+              if (slider.activeIndex === 0) {
+                menuButton.classList.add('active');
+              } else {
+                menuButton.classList.remove('active');
+              }
+            },
+          }
+        });
+      
+      }
     }
 }
 </script>
 
-<style>
-body.offcanvas {
-  overflow-x: hidden;
-}
-body.offcanvas #aside {
-  -moz-transform: translateX(0);
-  -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -o-transform: translateX(0);
-  transform: translateX(0);
-  width: 270px;
-  background: #fff;
-  z-index: 999;
-  position: fixed;
-}
-body.offcanvas #main, body.offcanvas .nav-toggle {
-  top: 0;
-  -moz-transform: translateX(270px);
-  -webkit-transform: translateX(270px);
-  -ms-transform: translateX(270px);
-  -o-transform: translateX(270px);
-  transform: translateX(270px);
-}
-
-</style>
 <style lang="scss" scoped>
 .nav-toggle {
   cursor: pointer;
@@ -186,8 +190,8 @@ body.offcanvas #main, body.offcanvas .nav-toggle {
       transform: rotateZ(-45deg);
     }
   }
-  position: fixed;
-  left: 0;
+  position: absolute;
+  right: -70px;
   top: 0px;
   z-index: 9999;
   cursor: pointer;
@@ -207,19 +211,24 @@ body.offcanvas #main, body.offcanvas .nav-toggle {
 }
 </style>
 <style lang="scss" scoped>
+.menu {
+  background: white;
+  width: 270px;
+}
 #aside {
   padding-top: 60px;
   padding-bottom: 40px;
-  width: 20%;
-  position: fixed;
-  bottom: 0;
-  top: 0;
-  left: 0;
+  // width: 20%;
+  // position: fixed;
+  // bottom: 0;
+  // top: 0;
+  // left: 0;
   overflow-y: hidden;
   z-index: 1001;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  width: 270px;
   #logo {
     text-align: center;
     font-family: "Roboto", Arial, sans-serif;
@@ -347,11 +356,11 @@ body.offcanvas #main, body.offcanvas .nav-toggle {
 @media screen and (max-width: 768px) {
   #aside {
     width: 270px;
-    -moz-transform: translateX(-270px);
-    -webkit-transform: translateX(-270px);
-    -ms-transform: translateX(-270px);
-    -o-transform: translateX(-270px);
-    transform: translateX(-270px);
+    // -moz-transform: translateX(-270px);
+    // -webkit-transform: translateX(-270px);
+    // -ms-transform: translateX(-270px);
+    // -o-transform: translateX(-270px);
+    // transform: translateX(-270px);
   }
 }
 

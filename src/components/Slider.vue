@@ -68,6 +68,7 @@ export default {
             let slide
             this.Swiper = new Swiper('.swiper-container', {
                 // direction: 'vertical', // 垂直切换选项
+                noSwiping: true,
                 autoplay: true,
                 delay: 5000,
 

@@ -4,8 +4,10 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div> -->
-    <Menu/>
-    <router-view id="main"/>
+    <div class="swiper-wrapper">
+      <Menu class="swiper-slide"/>
+      <router-view id="main" class="swiper-slide"/>
+    </div>
   </div>
 </template>
 <script>
@@ -40,6 +42,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  height: 100%;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -74,6 +77,9 @@ export default {
   -webkit-tap-highlight-color:transparent;
   outline: none;
 }
+html {
+  height: 100%;
+}
 body {
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 300;
@@ -81,6 +87,7 @@ body {
   line-height: 1.6;
   color: rgba(0, 0, 0, 0.5);
   background: whitesmoke;
+  height: 100%;
   margin: 0;
 }
 @media screen and (max-width: 992px) {
@@ -160,167 +167,6 @@ figure figcaption {
   position: relative;
 }
 
-#aside {
-  padding-top: 60px;
-  padding-bottom: 40px;
-  width: 20%;
-  position: fixed;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  overflow-y: scroll;
-  z-index: 1001;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-}
-@media screen and (max-width: 1200px) {
-  #aside {
-    width: 30%;
-  }
-}
-@media screen and (max-width: 768px) {
-  #aside {
-    width: 270px;
-    -moz-transform: translateX(-270px);
-    -webkit-transform: translateX(-270px);
-    -ms-transform: translateX(-270px);
-    -o-transform: translateX(-270px);
-    transform: translateX(-270px);
-  }
-}
-#aside #logo {
-  text-align: center;
-  font-family: "Roboto", Arial, sans-serif;
-  font-weight: 700;
-  margin-bottom: 2em;
-  text-transform: uppercase;
-  font-size: 38px;
-}
-@media screen and (max-width: 768px) {
-  #aside #logo {
-    margin-bottom: 1em;
-  }
-}
-#aside #logo a {
-  color: #000;
-}
-#aside #logo a span {
-  font-weight: 300;
-  color: rgba(0, 0, 0, 0.5);
-}
-#aside #main-menu ul {
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-@media screen and (max-width: 768px) {
-  #aside #main-menu ul {
-    margin: 0 0 2em 0;
-  }
-}
-#aside #main-menu ul li {
-  margin: 0 0 20px 0;
-  padding: 0;
-  list-style: none;
-}
-#aside #main-menu ul li a {
-  color: rgba(0, 0, 0, 0.9);
-  text-decoration: none;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  font-size: 13px;
-  font-weight: 600;
-  position: relative;
-  padding: 10px 10px;
-  letter-spacing: .2em;
-  font-family: "Roboto", Arial, sans-serif;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-#aside #main-menu ul li a:after {
-  content: "";
-  position: absolute;
-  height: 2px;
-  bottom: 7px;
-  left: 10px;
-  right: 10px;
-  background-color: #228896;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  -moz-transform: scaleX(0);
-  -ms-transform: scaleX(0);
-  -o-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -moz-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -ms-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -o-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-#aside #main-menu ul li a:hover {
-  text-decoration: none;
-  color: black;
-}
-#aside #main-menu ul li a:hover:after {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  -moz-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  -o-transform: scaleX(1);
-  transform: scaleX(1);
-}
-#aside #main-menu ul li.active a {
-  color: black;
-}
-#aside #main-menu ul li.active a:after {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  -moz-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  -o-transform: scaleX(1);
-  transform: scaleX(1);
-}
-#aside .footer {
-  position: absolute;
-  bottom: 40px;
-  font-size: 14px;
-  text-align: center;
-  width: 100%;
-  font-weight: 400;
-  color: rgba(0, 0, 0, 0.6);
-  padding: 0 20px;
-}
-@media screen and (max-width: 768px) {
-  #aside .footer {
-    position: relative;
-    bottom: 0;
-  }
-}
-#aside .footer span {
-  display: block;
-}
-#aside .footer ul {
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
-#aside .footer ul li {
-  padding: 0;
-  margin: 0;
-  display: inline;
-  list-style: none;
-}
-#aside .footer ul li a {
-  color: rgba(0, 0, 0, 0.7);
-  padding: 4px;
-}
-#aside .footer ul li a:hover, #aside .footer ul li a:active, #aside .footer ul li a:focus {
-  text-decoration: none;
-  outline: none;
-  color: #228896;
-}
 
 #main {
   width: 80%;
@@ -507,20 +353,6 @@ figure figcaption {
   background: #fff;
 }
 
-body.offcanvas {
-  overflow-x: hidden;
-}
-body.offcanvas #aside {
-  -moz-transform: translateX(0);
-  -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -o-transform: translateX(0);
-  transform: translateX(0);
-  width: 270px;
-  background: #fff;
-  z-index: 999;
-  position: fixed;
-}
 .services {
   margin-top: 5px;
 }
