@@ -1,5 +1,5 @@
 <template>
-    <iframe class="resumeFrame" src="https://boyzhaotian.github.io/resume/" frameborder="0"></iframe>
+    <iframe class="resumeFrame" src="https://boyzhaotian.github.io/resume/" frameborder="0" scrolling="yes"></iframe>
 </template>
 <style scoped>
 .resumeFrame {
