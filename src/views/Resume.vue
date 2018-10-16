@@ -3,7 +3,7 @@
 </template>
 <style scoped>
 .resumeFrame {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 </style>
