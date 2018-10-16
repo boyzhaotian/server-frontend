@@ -7,6 +7,7 @@
 .resume {
     height: 100vh;
     overflow: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 .resumeFrame {
     width: 100%;
