@@ -6,7 +6,7 @@
 <style scoped>
 .resume {
     height: 100vh;
-    overflow: scroll;
+    overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
 }
 .resumeFrame {
