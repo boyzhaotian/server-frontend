@@ -9,8 +9,8 @@
                             <div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
                                 <div class="slider-text-inner">
                                     <!-- <h1>Intuitive <strong></strong> is How Give We the User New Superpowers</h1> -->
-                                    <h1>学习最前沿、最实用的前后端技术，</h1>
-                                        <p><a class="btn btn-primary btn-demo popup-vimeo" href=""> <i class="icon-monitor"></i> Live Preview</a> <a class="btn btn-primary btn-learn">Learn More<i class="icon-arrow-right3"></i></a></p>
+                                    <h1><strong>独立建站</strong>，力求优质高效</h1>
+                                    <!-- <p><a class="btn btn-primary btn-demo popup-vimeo" href=""> <i class="icon-monitor"></i> Live Preview</a> <a class="btn btn-primary btn-learn">Learn More<i class="icon-arrow-right3"></i></a></p> -->
                                 </div>
                             </div>
                         </div>
@@ -23,8 +23,8 @@
                             <div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
                                 <div class="slider-text-inner">
                                     <!-- <h1>We are Happy to Create Newest Modern Websites</h1> -->
-                                    <h1>I'm Happy to Create Newest Modern Websites</h1>
-                                        <p><a class="btn btn-primary btn-demo popup-vimeo" href="#"> <i class="icon-monitor"></i> Live Preview</a> <a class="btn btn-primary btn-learn">Learn More<i class="icon-arrow-right3"></i></a></p>
+                                    <h1><strong>精雕细琢</strong>，用适合的技术，呈现最好的效果</h1>
+                                    <!-- <p><a class="btn btn-primary btn-demo popup-vimeo" href="#"> <i class="icon-monitor"></i> Live Preview</a> <a class="btn btn-primary btn-learn">Learn More<i class="icon-arrow-right3"></i></a></p> -->
                                 </div>
                             </div>
                         </div>
@@ -37,8 +37,8 @@
                             <div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
                                 <div class="slider-text-inner">
                                     <!-- <h1>Download our Free HTML5 Bootstrap Template</h1> -->
-                                    <h1>深入了解服务器性能及调优，突破各方面瓶颈限制</h1>
-                                        <p><a class="btn btn-primary btn-demo popup-vimeo" href=""> <i class="icon-monitor"></i> Live Preview</a> <a class="btn btn-primary btn-learn">Learn More<i class="icon-arrow-right3"></i></a></p>
+                                    <h1><strong>追求卓越</strong>，学无止境</h1>
+                                    <!-- <p><a class="btn btn-primary btn-demo popup-vimeo" href=""> <i class="icon-monitor"></i> Live Preview</a> <a class="btn btn-primary btn-learn">Learn More<i class="icon-arrow-right3"></i></a></p> -->
                                 </div>
                             </div>
                         </div>
