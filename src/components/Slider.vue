@@ -70,7 +70,7 @@ export default {
                 // direction: 'vertical', // 垂直切换选项
                 noSwiping: true,
                 autoplay: {
-                    delay: 100000
+                    delay: 10000
                 },
 
                 effect : 'fade',
