@@ -384,7 +384,7 @@ figure figcaption {
   content: '';
   background: rgba(0, 0, 0, 0.3);
 }
-#hero .swiper-container .swiper-wrapper span {
+#hero .swiper-container .swiper-wrapper .swiper-slide {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;

@@ -3,15 +3,15 @@
         <a href="#" class="nav-toggle" :class="{ active: open }" @click="toggleMenu"><i></i></a>
         <aside id="aside" role="complementary" class="border js-fullheight">
 
-            <h1 id="logo"><a href="index">赵大仁</a></h1>
+            <h1 id="logo"><a href="home">赵大仁</a></h1>
             <nav id="main-menu" role="navigation">
                 <ul>
-                    <li class="active"><a href="index">Home主页</a></li>
-                    <li><a href="resume">Resume简历</a></li>
-                    <li><a href="blog">Blog博客</a></li>
-                    <li><a href="portfolio">Portfolio作品集</a></li>
-                    <li><a href="about">About关于</a></li>
-                    <li><a href="contact">Contact联系方式</a></li>
+                    <li :class="{ active: checkPath('home') }"><a href="home">Home主页</a></li>
+                    <li :class="{ active: checkPath('resume') }"><a href="resume">Resume简历</a></li>
+                    <li :class="{ active: checkPath('blog') }"><a href="blog">Blog博客</a></li>
+                    <li :class="{ active: checkPath('portfolio') }"><a href="portfolio">Portfolio作品集</a></li>
+                    <li :class="{ active: checkPath('about') }"><a href="about">About关于</a></li>
+                    <li :class="{ active: checkPath('contact') }"><a href="contact">Contact联系方式</a></li>
                 </ul>
             </nav>
 
@@ -39,6 +39,10 @@ export default {
         this.mobileMenuOutsideClick()
     },
     methods: {
+        checkPath(path) {
+          let isIndex = path === 'home' && this.$route.path === '/'
+          return this.$route.path.indexOf(path) > -1 || isIndex
+        },
         toggleMenu() {
             this.open ? this.closeMenu() : this.openMenu()
         },
@@ -205,7 +209,7 @@ body.offcanvas #main, body.offcanvas .nav-toggle {
   bottom: 0;
   top: 0;
   left: 0;
-  overflow-y: scroll;
+  overflow-y: hidden;
   z-index: 1001;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
