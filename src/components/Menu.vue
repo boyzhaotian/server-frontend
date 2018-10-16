@@ -44,7 +44,7 @@ export default {
           return this.$route.path.indexOf(path) > -1 || isIndex
         },
         go(path) {
-          this.$router.push(`/${path}`)
+          this.$router.push(path)
           setTimeout(this.closeMenu, 500);
         },
         toggleMenu() {

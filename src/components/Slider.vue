@@ -23,7 +23,7 @@
                             <div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
                                 <div class="slider-text-inner">
                                     <!-- <h1>We are Happy to Create Newest Modern Websites</h1> -->
-                                    <h1>学习最前沿、最实用的服务端技术，对项目进行针对性的技术选型</h1>
+                                    <h1>I'm Happy to Create Newest Modern Websites</h1>
                                         <p><a class="btn btn-primary btn-demo popup-vimeo" href="#"> <i class="icon-monitor"></i> Live Preview</a> <a class="btn btn-primary btn-learn">Learn More<i class="icon-arrow-right3"></i></a></p>
                                 </div>
                             </div>
