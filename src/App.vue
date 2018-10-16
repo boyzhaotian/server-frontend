@@ -521,15 +521,6 @@ body.offcanvas #aside {
   z-index: 999;
   position: fixed;
 }
-body.offcanvas #main, body.offcanvas .nav-toggle {
-  top: 0;
-  -moz-transform: translateX(270px);
-  -webkit-transform: translateX(270px);
-  -ms-transform: translateX(270px);
-  -o-transform: translateX(270px);
-  transform: translateX(270px);
-}
-
 .services {
   margin-top: 5px;
 }
@@ -1081,117 +1072,6 @@ body.offcanvas #main, body.offcanvas .nav-toggle {
 
 #message {
   height: 130px;
-}
-
-.nav-toggle {
-  cursor: pointer;
-  text-decoration: none;
-}
-.nav-toggle.active i::before, .nav-toggle.active i::after {
-  background: #000;
-}
-.nav-toggle.dark.active i::before, .nav-toggle.dark.active i::after {
-  background: #000;
-}
-.nav-toggle:hover, .nav-toggle:focus, .nav-toggle:active {
-  outline: none;
-  border-bottom: none !important;
-}
-.nav-toggle i {
-  position: relative;
-  display: -moz-inline-stack;
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
-  width: 30px;
-  height: 2px;
-  color: #000;
-  font: bold 14px/.4 Helvetica;
-  text-transform: uppercase;
-  text-indent: -55px;
-  background: #000;
-  transition: all .2s ease-out;
-}
-.nav-toggle i::before, .nav-toggle i::after {
-  content: '';
-  width: 30px;
-  height: 2px;
-  background: #000;
-  position: absolute;
-  left: 0;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-}
-.nav-toggle.dark i {
-  position: relative;
-  color: #000;
-  background: #000;
-  transition: all .2s ease-out;
-}
-.nav-toggle.dark i::before, .nav-toggle.dark i::after {
-  background: #000;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.nav-toggle i::before {
-  top: -7px;
-}
-
-.nav-toggle i::after {
-  bottom: -7px;
-}
-
-.nav-toggle:hover i::before {
-  top: -10px;
-}
-
-.nav-toggle:hover i::after {
-  bottom: -10px;
-}
-
-.nav-toggle.active i {
-  background: transparent;
-}
-
-.nav-toggle.active i::before {
-  top: 0;
-  -webkit-transform: rotateZ(45deg);
-  -moz-transform: rotateZ(45deg);
-  -ms-transform: rotateZ(45deg);
-  -o-transform: rotateZ(45deg);
-  transform: rotateZ(45deg);
-}
-
-.nav-toggle.active i::after {
-  bottom: 0;
-  -webkit-transform: rotateZ(-45deg);
-  -moz-transform: rotateZ(-45deg);
-  -ms-transform: rotateZ(-45deg);
-  -o-transform: rotateZ(-45deg);
-  transform: rotateZ(-45deg);
-}
-
-.nav-toggle {
-  position: fixed;
-  left: 0;
-  top: 0px;
-  z-index: 9999;
-  cursor: pointer;
-  opacity: 1;
-  visibility: hidden;
-  padding: 20px;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-}
-@media screen and (max-width: 768px) {
-  .nav-toggle {
-    opacity: 1;
-    visibility: visible;
-  }
 }
 
 @media screen and (max-width: 480px) {

@@ -97,6 +97,7 @@ body.offcanvas #main, body.offcanvas .nav-toggle {
 .nav-toggle {
   cursor: pointer;
   text-decoration: none;
+  background: rgba($color: white, $alpha: .2);
   &.active i {
     &::before, &::after {
       background: #000;
@@ -125,6 +126,7 @@ body.offcanvas #main, body.offcanvas .nav-toggle {
     text-indent: -55px;
     background: #000;
     transition: all .2s ease-out;
+    bottom: 3px;
     &::before, &::after {
       content: '';
       width: 30px;
@@ -191,7 +193,7 @@ body.offcanvas #main, body.offcanvas .nav-toggle {
   cursor: pointer;
   opacity: 1;
   visibility: hidden;
-  padding: 20px;
+  padding: 15px 20px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
