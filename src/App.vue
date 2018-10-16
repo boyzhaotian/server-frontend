@@ -169,8 +169,9 @@ figure figcaption {
 
 
 #main {
-  width: 80%;
-  float: right;
+  height: 100vh;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
