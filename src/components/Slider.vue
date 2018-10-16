@@ -83,7 +83,7 @@ export default {
                 },
 
                 on: {
-                    init(swiper){
+                    init(){
                         slide=this.slides.eq(0).find('.slider-text');
                         slide.addClass('animated fadeInUp');
                     },
@@ -114,13 +114,13 @@ export default {
     }
 }
 .bg_1 {
-    background-image: url(../assets/img_bg_1.jpg);
+    background-image: url(../assets/img/img_bg_1.jpg);
 }
 .bg_2 {
-    background-image: url(../assets/img_bg_2.jpg);
+    background-image: url(../assets/img/img_bg_2.jpg);
 }
 .bg_3 {
-    background-image: url(../assets/img_bg_3.jpg);
+    background-image: url(../assets/img/img_bg_3.jpg);
 }
 </style>
 <style lang="scss" scoped>

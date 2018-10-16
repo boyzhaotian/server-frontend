@@ -55,9 +55,9 @@ export default {
             document.getElementsByTagName('body')[0].className = ''
         },
         mobileMenuOutsideClick() {
-            document.body.click(()=>{
-              
-            })
+            document.getElementById('main').onclick = () => {
+              this.open&&this.closeMenu()
+            }
             window.onscroll = () => this.closeMenu()
         }
     }
