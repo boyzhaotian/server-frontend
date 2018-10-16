@@ -29,7 +29,6 @@
     </div>
 </template>
 <script>
-import Store from '@/store'
 export default {
     data() {
         return {
