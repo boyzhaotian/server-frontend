@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <!-- <img alt="Vue logo" src="../assets/logo-sky-blue.png"> -->
+    <!-- <img alt="Vue logo" src="../assets/img/logo-sky-blue.png"> -->
     <Slider/>
   </div>
 </template>

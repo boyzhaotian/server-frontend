@@ -12,19 +12,13 @@
 </template>
 <script>
 import Menu from '@/components/Menu'
-import { fullHeight } from '@/utils.js'
+import { init } from '@/assets/js/utils'
 export default {
   components: {
     Menu
   },
   mounted() {
-    this.init()
-  },
-  methods: {
-    init() {
-      console.log(1,fullHeight);
-      fullHeight()
-    }
+    init()
   }
 }
 </script>
@@ -40,7 +34,6 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   height: 100%;
   width: 100%;
@@ -85,7 +78,6 @@ body {
   font-weight: 300;
   font-size: 14px;
   line-height: 1.6;
-  color: rgba(0, 0, 0, 0.5);
   background: whitesmoke;
   height: 100%;
   margin: 0;
@@ -165,39 +157,6 @@ figure figcaption {
   width: 100%;
   overflow: hidden;
   position: relative;
-}
-
-
-#main {
-  height: 100vh;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-}
-@media screen and (max-width: 1200px) {
-  #main {
-    width: 70%;
-  }
-}
-@media screen and (max-width: 768px) {
-  #main {
-    width: 100%;
-  }
-}
-#main .narrow-content {
-  position: relative;
-  width: 93%;
-  margin: 0 auto;
-  padding: 4em 0;
-  clear: both;
-}
-@media screen and (max-width: 768px) {
-  #main .narrow-content {
-    width: 100%;
-    padding: 4em 1em;
-  }
 }
 
 #hero {
@@ -759,7 +718,7 @@ figure figcaption {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  padding: 8px 20px !important;
+  padding: 8px 20px;
 }
 .btn.btn-sm {
   padding: 4px 15px !important;

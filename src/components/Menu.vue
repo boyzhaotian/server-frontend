@@ -46,7 +46,7 @@ export default {
         return this.$route.path.indexOf(path) > -1 || isIndex
       },
       go(path) {
-        this.$router.push(path)
+        this.$router.push({name:path})
         setTimeout(this.closeMenu, 500);
       },
       toggleMenu() {
@@ -192,12 +192,12 @@ export default {
   }
   position: absolute;
   right: -70px;
-  top: 0px;
+  top: 3px;
   z-index: 9999;
   cursor: pointer;
   opacity: 1;
   visibility: hidden;
-  padding: 15px 20px;
+  padding: 20px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -349,7 +349,7 @@ export default {
 
 @media screen and (max-width: 1200px) {
   #aside {
-    width: 30%;
+    // width: 30%;
   }
 }
 
@@ -382,4 +382,39 @@ export default {
     bottom: 0;
   }
 }
+
+</style>
+<style lang="scss">
+#main {
+  height: 100vh;
+  overflow-y: scroll;
+  width: calc( 100% - 270px );
+  -webkit-overflow-scrolling: touch;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+@media screen and (max-width: 1200px) {
+  #main {
+  }
+}
+@media screen and (max-width: 768px) {
+  #main {
+    width: 100%;
+  }
+}
+#main .narrow-content {
+  position: relative;
+  width: 93%;
+  margin: 0 auto;
+  padding: 4em 0;
+  clear: both;
+}
+@media screen and (max-width: 768px) {
+  #main .narrow-content {
+    width: 100%;
+    padding: 4em 1em;
+  }
+}
+
 </style>
