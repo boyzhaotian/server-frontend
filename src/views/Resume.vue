@@ -245,16 +245,16 @@
                     <section class=contact>
                         <ul>
                             <li>
-                                <a href=http://sky-blog.netlify.com target=_blank>
+                                <a href=http://zhaosky.cn target=_blank>
                                     <i class="iconfont icon-homepage"></i>
-                                    <span class=contact-link>sky-blog.netlify.com</span>
+                                    <!-- <span class=contact-link>sky-blog.netlify.com</span> -->
+                                    <span class=contact-link>zhaosky.cn</span>
                                 </a>
                             </li>
                             <li>
                                 <a href=https://github.com/boyzhaotian target=_blank>
                                     <i class="iconfont icon-github"></i>
                                     <span class=contact-link>github.com/boyzhaotian</span>
-
                                 </a>
                             </li>
                             <li>

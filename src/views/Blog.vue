@@ -9,13 +9,15 @@
                     <blog-item></blog-item>
 				</div>
         </div>
+        <get-in-touch></get-in-touch>
     </div>
 </template>
 <script>
 import BlogItem from '../components/BlogItem.vue';
+import GetInTouch from '@/components/GetInTouch'
 export default {
     components: {
-        BlogItem
+        BlogItem, GetInTouch
     }
 }
 </script>

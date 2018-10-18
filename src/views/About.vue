@@ -1,5 +1,13 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+	<div class="about">
+		<get-in-touch></get-in-touch>
+	</div>
 </template>
+<script>
+import GetInTouch from '@/components/GetInTouch'
+export default {
+	components: {
+		GetInTouch
+	}
+}
+</script>

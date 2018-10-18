@@ -40,7 +40,7 @@
             
             <div class="row">
                 <div class="col-md-4">
-                    <h2>Get In Touch</h2>
+                    <h2>联系我</h2>
                 </div>
             </div>
             <form action="">
@@ -49,21 +49,21 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Name">
+                                    <input type="text" class="form-control" placeholder="称呼">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Email">
+                                    <input type="text" class="form-control" placeholder="邮箱">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Phone">
+                                    <input type="text" class="form-control" placeholder="手机号">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                                    <textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="内容"></textarea>
                                 </div>
                                 <div class="form-group">
-                                    <input type="submit" class="btn btn-primary btn-md" value="Send Message">
+                                    <input @click="sendMessage" type="submit" class="btn btn-primary btn-md" value="发送信息">
                                 </div>
                             </div>
                             
@@ -78,6 +78,10 @@
 </template>
 <script>
 export default {
-    
+    methods: {
+        sendMessage() {
+            event.preventDefault()
+        }
+    }
 }
 </script>
