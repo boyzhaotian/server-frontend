@@ -4,6 +4,7 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div> -->
+    <guide></guide>
     <div class="swiper-wrapper">
       <Menu class="swiper-slide"/>
       <router-view id="main" class="swiper-slide"/>
@@ -12,10 +13,11 @@
 </template>
 <script>
 import Menu from '@/components/Menu'
+import Guide from '@/components/Guide'
 import { init } from '@/assets/js/utils'
 export default {
   components: {
-    Menu
+    Menu, Guide
   },
   mounted() {
     init()

@@ -5,6 +5,7 @@ import Resume from './views/Resume.vue'
 import Blog from './views/Blog.vue'
 import Contact from './views/Contact.vue'
 import Portfolio from './views/Portfolio.vue'
+import Settings from './views/Settings.vue'
 import NotFoundComponent from './views/404.vue'
 
 Vue.use(Router)
@@ -51,6 +52,11 @@ export default new Router({
       path: '/portfolio',
       name: 'portfolio',
       component: Portfolio
+    },
+    {
+      path: '/settings',
+      name: 'settings',
+      component: Settings
     },
     {
       path: '*',

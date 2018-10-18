@@ -204,12 +204,13 @@
                 </div>
                 <header class="content-right content-hd">
 
-                    <section class=title>
+                    <section class="title">
+                        <!-- <div class="avatar" style="background: url(/static/img/img-1.jpg)"></div> -->
                         <img class=avatar src="../assets/img/avatar.jpg">
                         <div class=name>
                             <h1>赵天</h1>
                         </div>
-                    <h2 class="job">Web前端开发工程师<br>全栈工程师</h2>
+                    <h2 class="job">Web前端工程师<br>全栈工程师</h2>
                     </section>
 
                     <section class=info>

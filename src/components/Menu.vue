@@ -12,6 +12,7 @@
                     <li :class="{ active: checkPath('portfolio') }" @click="go('portfolio')"><a @click="go('portfolio')">Portfolio作品集</a></li>
                     <li :class="{ active: checkPath('about') }" @click="go('about')"><a @click="go('about')">About关于</a></li>
                     <li :class="{ active: checkPath('contact') }" @click="go('contact')"><a @click="go('contact')">Contact联系方式</a></li>
+                    <li :class="{ active: checkPath('settings') }" @click="go('settings')"><a @click="go('settings')">Settings网站设置</a></li>
                 </ul>
             </nav>
 
