@@ -36,10 +36,6 @@ let fullHeight = function() {
 
 };
 
-let hasClass = (element,cls) => {
-    return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
-}
-
 let init = () => {
     fullHeight()
 }
@@ -59,7 +55,6 @@ let debounce = (fn, delay) => {
 export {
     isMobile,
     fullHeight,
-    hasClass,
     init,
     clone,
     debounce

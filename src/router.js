@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Resume from './views/Resume.vue'
+import Blog from './views/Blog.vue'
 import Contact from './views/Contact.vue'
 import Portfolio from './views/Portfolio.vue'
 import NotFoundComponent from './views/404.vue'
@@ -14,6 +15,7 @@ export default new Router({
   routes: [
     {
       path: '/',
+      redirect: 'home',
       name: 'root',
       component: Home
     },
@@ -34,6 +36,11 @@ export default new Router({
       path: '/resume',
       name: 'resume',
       component: Resume
+    },
+    {
+      path: '/blog',
+      name: 'blog',
+      component: Blog
     },
     {
       path: '/contact',
