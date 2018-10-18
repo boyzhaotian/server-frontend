@@ -81,6 +81,7 @@ export default {
     methods: {
         sendMessage() {
             event.preventDefault()
+            
         }
     }
 }
