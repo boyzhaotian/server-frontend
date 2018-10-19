@@ -10,7 +10,7 @@
                     </div>
                 </div>
             </div>
-            <div class="weui-cells__tips">*开启后需刷新页面查看引导</div>
+            <div class="weui-cells__tips">*开启后需刷新页面查看引导<a href="">点击刷新</a></div>
 
         </div>
     </div>
@@ -19,12 +19,15 @@
 export default {
     data() {
         return {
-            guide: !localStorage.getItem('guide')
+            guide: this.$store.state.guide
         }
     },
     watch: {
+        '$store.state.guide'(val) {
+            this.guide = val
+        },
         guide(val) {
-            localStorage.setItem('guide',val)
+            this.$store.commit('guide', val)
         }
     }
 }
