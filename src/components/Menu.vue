@@ -42,7 +42,7 @@ export default {
       this.init()
       this.open&&setTimeout(() => {
         this.closeMenu()
-      }, 3000);
+      }, this.$store.state.guideTime);
     },
     methods: {
       checkPath(path) {

@@ -5,7 +5,8 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
 	state: {
-		guide: localStorage.getItem('guide') === 'true'
+		guide: localStorage.getItem('guide') === 'true',
+		guideTime: 5000
 	},
 	mutations: {
 		guide(state, val) {

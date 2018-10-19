@@ -15,7 +15,7 @@ export default {
         return {
             show: this.$store.state.guide,
             hiding: false,
-            cd: 5
+            cd: this.$store.state.guideTime / 1000
         }
     },
     mounted() {
