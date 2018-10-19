@@ -35,11 +35,14 @@ export default {
     data() {
       return {
         menuSwiper: Object,
-        open: true
+        open: this.$store.state.guide
       }
     },
     mounted() {
       this.init()
+      this.open&&setTimeout(() => {
+        this.closeMenu()
+      }, 3000);
     },
     methods: {
       checkPath(path) {
