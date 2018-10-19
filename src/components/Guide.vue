@@ -13,7 +13,7 @@
 export default {
     data() {
         return {
-            show: !localStorage.getItem('guide'),
+            show: localStorage.getItem('guide') === 'true',
             hiding: false,
             cd: 5
         }
@@ -24,7 +24,7 @@ export default {
     methods: {
         seen() {
             if(this.cd)return
-            localStorage.setItem('guide',true)
+            localStorage.setItem('guide', 'false')
             this.hiding = true
             setTimeout(() => {
                 this.show = false
