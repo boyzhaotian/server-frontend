@@ -53,9 +53,6 @@ export default {
         this.$router.push({name:path})
         setTimeout(this.closeMenu, 500);
       },
-      toggleMenu() {
-          this.open ? this.closeMenu() : this.openMenu()
-      },
       openMenu() {
           this.open = true
           this.menuSwiper.slidePrev()
@@ -65,7 +62,6 @@ export default {
           this.menuSwiper.slideNext()
       },
       init() {
-
         var menuButton = document.querySelector('.nav-toggle');
         this.menuSwiper = new Swiper('#app', {
           slidesPerView: 'auto',
@@ -95,7 +91,6 @@ export default {
             },
           }
         });
-      
       }
     }
 }
@@ -197,7 +192,7 @@ export default {
   position: absolute;
   right: -70px;
   top: 3px;
-  z-index: 9999;
+  z-index: 2;
   cursor: pointer;
   opacity: 1;
   visibility: hidden;

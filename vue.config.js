@@ -1,6 +1,6 @@
 // // vue.config.js 配置说明
 // // 这里只列一部分，具体配置惨考文档啊
-// module.exports = {
+module.exports = {
 //     // baseUrl  type:{string} default:'/' 
 //     // 将部署应用程序的基本URL
 //     // 将部署应用程序的基本URL。
@@ -45,21 +45,19 @@
 //     // devServer:{type:Object} 3个属性host,port,https
 //     // 它支持webPack-dev-server的所有选项
 
-//     devServer: {
-//         port: 8080, // 端口号
+    devServer: {
+        // port: 8080, // 端口号
 //         host: '0.0.0.0',
 //         https: false, // https:{type:Boolean}
 //         open: true, //配置自动启动浏览器
 //         // proxy: 'http://localhost:4000' // 配置跨域处理,只有一个代理
-//         proxy: {
-//             '/api': {
-//                 target: '<url>',
-//                 ws: true,
-//                 changeOrigin: true
-//             },
-//             '/foo': {
-//                 target: '<other_url>'
-//             }
-//         },  // 配置多个代理
-//     }
-// }
+        proxy: {
+            '/api': {
+                target: 'http://localhost:3000/',
+                pathRewrite: {
+                    '^/api': ''
+                }
+            }
+        }
+    }
+}

@@ -1,9 +1,9 @@
 <template>
-  <div class="home">
-    <!-- <img alt="Vue logo" src="../assets/img/logo-sky-blue.png"> -->
-    <Slider/>
-    <get-in-touch></get-in-touch>
-  </div>
+	<div class="home">
+		<!-- <img alt="Vue logo" src="../assets/img/logo-sky-blue.png"> -->
+		<Slider/>
+		<Get-in-touch></Get-in-touch>
+	</div>
 </template>
 
 <script>
@@ -11,9 +11,9 @@
 import Slider from '@/components/Slider'
 import GetInTouch from '@/components/GetInTouch'
 export default {
-  name: 'home',
-  components: {
-    Slider, GetInTouch
-  }
+	name: 'home',
+	components: {
+		Slider, GetInTouch
+	}
 }
 </script>

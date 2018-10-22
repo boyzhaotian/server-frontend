@@ -49,18 +49,18 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="称呼">
+                                    <input v-model="name" type="text" class="form-control" placeholder="称呼">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="邮箱">
+                                    <input v-model="email" type="text" class="form-control" placeholder="邮箱">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="手机号">
+                                    <input v-model="mobile" type="text" class="form-control" placeholder="手机号">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="内容"></textarea>
+                                    <textarea v-model="content" name="" id="message" cols="30" rows="7" class="form-control" placeholder="内容"></textarea>
                                 </div>
                                 <div class="form-group">
                                     <input @click="sendMessage" type="submit" class="btn btn-primary btn-md" value="发送信息">
@@ -73,15 +73,53 @@
                 </div>
             </form>
         </div>
-        <div id="map"></div>	
+        <div id="map"></div>
     </div>
 </template>
 <script>
+let appid = '1400151932'
+let appkey = '09af7b453d651363a4a93b8c2ff01327'
+import QcloudSms from 'qcloudsms_js'
+import weui from 'weui.js';
+import axios from 'axios'
 export default {
+    data() {
+        return {
+            name: '1',
+            email: '2',
+            mobile: '3',
+            content: '4',
+        }
+    },
     methods: {
         sendMessage() {
             event.preventDefault()
-            
+            if (!this.name&&!this.email&&!this.mobile&&!this.content) {
+                weui.alert('请填写完整信息方便后期与您取得联系哦')
+            }
+            weui.confirm(`
+                <div style='text-align:left'>请核对您要发送的信息：
+                <br>称呼：${this.name}
+                <br>邮箱：${this.email}
+                <br>手机号：${this.mobile}
+                <br>内容：${this.content}</div>`, this.sendMail)
+        },
+        sendMail() {
+            axios.post('/api/mail',this.$data,(res)=>{
+                console.log(res);
+            })
+        },
+        sendSMS() {
+            let qcloudsms = QcloudSms(appid, appkey)
+            let ssender = qcloudsms.SmsSingleSender()
+            let smsType = 0
+            let callback = (err, res, resData) => {
+                console.log(err, res, resData);
+            }
+            ssender.send(smsType, 86, this.phone, 
+                `【个人主页-联系我】称呼：${this.name}，邮箱：${this.email}，手机号：${this.mobile}，内容：${this.content}。`, "", "",
+                callback
+            )
         }
     }
 }

@@ -25,6 +25,14 @@ export default {
 }
 </script>
 
+<style lang="scss">
+.swiper-wrapper {
+  .weui-mask, .weui-dialog {
+    left: 270px;
+    right: -270px;
+  }
+}
+</style>
 
 <style lang="scss">
 * {

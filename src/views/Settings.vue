@@ -11,7 +11,6 @@
                 </div>
             </div>
             <div class="weui-cells__tips">*开启后需刷新页面查看引导<a href="">点击刷新</a></div>
-
         </div>
     </div>
 </template>
