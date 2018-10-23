@@ -85,10 +85,10 @@ import axios from 'axios'
 export default {
     data() {
         return {
-            name: '1',
-            email: '2',
-            mobile: '3',
-            content: '4',
+            name: '',
+            email: '',
+            mobile: '',
+            content: '',
         }
     },
     methods: {
