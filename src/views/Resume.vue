@@ -14,6 +14,23 @@
                         <div class=section-bd>
                             <div class=item>
                                 <header class=item-hd>
+                                    <span class=item-time>2018.05 ~ 至今</span>
+                                    <a class="btn item-more" href=http://weizhan.gmw.cn/web/index.php? target=_blank>工作</a>
+                                    <h3 class=item-name>中化能源科技有限公司</h3>
+                                </header>
+                                <div class=item-bd>
+                                    <p class=section-content>
+                                        <strong>项目单元负责人</strong><strong>前端工程师</strong>
+                                        <ul>
+                                          <li>负责2C-mobile项目前端单元开发。</li>
+                                          <li>负责架构新项目，配置部署环境，前端性能优化；</li>
+                                          <li>积极与运营UI沟通以在C端呈现最好的用户体验及视觉效果。</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class=item>
+                                <header class=item-hd>
                                     <span class=item-time>2015.12 ~ 2018.04</span>
                                     <a class="btn item-more" href=http://weizhan.gmw.cn/web/index.php? target=_blank>工作</a>
                                     <h3 class=item-name>光明云科技有限公司</h3>
@@ -21,8 +38,11 @@
                                 <div class=item-bd>
                                     <p class=section-content>
                                         <strong>技术部-经理</strong><strong>前端工程师</strong>
-                                        工作包括参与整体项目计划制定，项目需求分析，跟踪项目进度，评估项目风险，对产品及运营需求进行方案设计、实现及持续优化。
-                                        过程中，对业务目标及技术目标的达成负责，对问题快速响应，利用工程化的手段提高研发效率、质量。                            </p>
+                                        <ul>
+                                          <ul>负责需求分析，进度评估以及跟踪，评估项目风险，对产品及运营需求进行方案设计、实现及持续优化。</ul>
+                                          <ul>过程中，对业务目标及技术目标的达成负责，对问题快速响应，利用工程化的手段提高研发效率、质量。</ul>
+                                        </ul>
+                                    </p>
                                 </div>
                             </div>
 
@@ -64,19 +84,31 @@
                         <div class=section-bd>
                             <div class=item>
                                 <header class=item-hd>
-                                    <span class=item-time>2018.1 ~ 至今</span>
-                                    <!-- <a class="btn item-more" href=http://ws.gmym.cn/app/index.php?i=76 target=_blank>Link</a> -->
+                                    <span class=item-time>2018.05 ~ 至今</span>
+                                    <a class="btn item-more" href="https://m.sinochem-fjxs.com/weixin/filter/common/redirectFlag?flag=memberCenter&sbxid=wx175f54b5df1158b4" target="_blank">Link</a>
+                                    <h3 class=item-name>小化加油 - 公众号</h3>
+                                </header>
+                                <div class=item-bd>
+                                    <p class=section-content>
+                                        <strong>前端负责人</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- <div class=item>
+                                <header class=item-hd>
+                                    <span class=item-time>2018.01 ~ 2018.04</span>
+                                    <a class="btn item-more" href=http://ws.gmym.cn/app/index.php?i=76 target=_blank>Link</a>
                                     <h3 class=item-name>光明推广平台</h3>
                                 </header>
                                 <div class=item-bd>
                                     <p class=section-content>
-                                        <strong>前端工程师</strong>为推动公司前端技术栈的发展，该项目选择使用<em>VUE</em>来进行开发。由于项目周期短规模不大，且<em>VUE</em>的学习曲线平缓而快，社区内容丰富适合作为提升技术栈的首选。
+                                        <strong>前端负责人</strong>为推动公司前端技术栈的发展，该项目选择使用<em>VUE</em>来进行开发。由于项目周期短规模不大，且<em>VUE</em>的学习曲线平缓而快，社区内容丰富适合作为提升技术栈的首选。
                                     </p>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class=item>
                                 <header class=item-hd>
-                                    <span class=item-time>2017.7 ~ 2017.10</span>
+                                    <span class=item-time>2017.07 ~ 2017.10</span>
                                     <a class="btn item-more" href='http://theory.cloud.gmw.cn/templates/app/index.html' target=_blank>Link</a>
                                     <h3 class=item-name>光明日报理论号</h3>
                                 </header>
@@ -113,7 +145,7 @@
                             </div>
                             <div class=item>
                                 <header class=item-hd>
-                                    <span class=item-time>2015.9 ~ 2016.4</span>
+                                    <span class=item-time>2015.09 ~ 2016.04</span>
                                     <h3 class=item-name>智行护驾APP / 智行小弟APP / 智行护驾微信端</h3>
                                 </header>
                                 <div class=item-bd>
@@ -147,18 +179,17 @@
                         </header>
                         <div class=section-bd>
                             <ul class=section-list>
-                                <li><p class=section-content><i class="iconfont icon-dot"></i>精通<em>html/css/javascript</em>，熟练掌握<em>Bootstrap</em>、<em>jQuery</em>等前端框架。</p></li>
-                                <li><p class=section-content><i class="iconfont icon-dot"></i>精通<em>PC端</em>，<em>H5/APP</em>端的前端设计模式，熟悉<em>Nodejs</em>、<em>Reactjs</em>、<em>gulp</em>等前端构建工具。</p></li>
-                                <li><p class=section-content><i class="iconfont icon-dot"></i>了解<em>前端模块化开发</em>，<em>前端工程化</em>。</p></li>
-                                <li><p class=section-content><i class="iconfont icon-dot"></i>了解<em>PHP</em>、<em>Nodejs</em>、<em>java</em>、<em>Python</em>等服务器开发语言，有与相关工程师配合开发的工作经验。</p></li>
+                                <li><p class=section-content><i class="iconfont icon-dot"></i>精通<em>html/css/javascript</em>，熟练掌握<em>Vue</em>、<em>jQuery</em>，掌握<em>reactjs</em>、<em>angular</em>等前端框架。</p></li>
+                                <li><p class=section-content><i class="iconfont icon-dot"></i>精通<em>PC端</em>，<em>H5/APP</em>端的前端设计模式，熟悉<em>Webpack</em>、<em>gulp</em>等前端构建工具。</p></li>
+                                <li><p class=section-content><i class="iconfont icon-dot"></i>熟悉数据库基本操作，可使用<em>PHP</em>、<em>Nodejs</em>、<em>java</em>、<em>Python</em>等语言进行服务端开发。</p></li>
                                 <li><p class=section-content><i class="iconfont icon-dot"></i>重视<em>用户体验</em>，有一定<em>视觉设计</em>能力。</p></li>
                                 <!-- <li><p class=section-content><i class="iconfont icon-dot"></i>懂<em>设计</em>，重视<em>用户体验</em>与<em>代码可维护性</em>。</p></li> -->
                                 <!-- <li><p class=section-content><i class="iconfont icon-dot"></i>善于使用<em>CSS特性</em><em>打包</em><em>代码优化</em><em>合并请求</em>等方式来进行前端优化。</p></li> -->
                                 <!-- <li><p class=section-content><i class="iconfont icon-dot"></i>熟练使用<em>jQuery</em>、<em>Bootstrap等</em>流行框架，有能力自行搭建<em>模块化</em>框架。</p></li> -->
                                 <li><p class=section-content><i class="iconfont icon-dot"></i>熟练掌握<em>Git</em>，熟悉多人开发流程。</p></li>
-                                <li><p class=section-content><i class="iconfont icon-dot"></i>掌握<em>React</em>、<em>Vue</em>等Node框架。</p></li>
+                                <li><p class=section-content><i class="iconfont icon-dot"></i>掌握<em>koa</em>、<em>express</em>等Node后端框架。</p></li>
                                 <!-- <li><p class=section-content><i class="iconfont icon-dot"></i>掌握<em>文件打包工具</em>、<em>代码优化工具</em>及<em>扩展语言</em>的使用。</p></li> -->
-                                <li><p class=section-content><i class="iconfont icon-dot"></i>懂<em>微信小程序</em>开发，能够快速掌握新技能，可阅读<em>英文文档</em>，适应英文办公环境。</p></li>
+                                <li><p class=section-content><i class="iconfont icon-dot"></i>可以独立完成<em>微信小程序</em>开发，有过<em>小游戏</em>经验，能够快速掌握新技能，可阅读<em>英文文档</em>，适应英文办公环境。</p></li>
                                 <li><p class=section-content><i class="iconfont icon-dot"></i>有责任感，学习能力强，有良好的沟通技巧和团队合作精神。</p></li>
                             </ul>
                         </div>
@@ -210,7 +241,7 @@
                         <div class=name>
                             <h1>赵天</h1>
                         </div>
-                    <h2 class="job">Web前端工程师<br>全栈工程师</h2>
+                    <h2 class="job">前端工程师<br>全栈工程师</h2>
                     </section>
 
                     <section class=info>
