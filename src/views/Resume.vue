@@ -95,7 +95,7 @@
                                           把新技术、新设计运用起来制作的站点，及博客、作品集、个人小站于一身，希望进来的朋友们能有不错的体验^
                                           <br>网站会不定期更新，大家可以提出宝贵的意见来帮助丰富小站内容，优化用户体验。<span style="color:#00b38a" @click="$router.push({name:'contact'})">我要提意见！</span>
                                         
-                                        <br>#<em>vue</em>,<em>vue-router</em>,<em>vuex</em>,<em>swiper</em>,<em>axios</em>,<em>scss</em>,<em>webpack</em>#
+                                        <br>#<em>vue</em>,<em>vue-router</em>,<em>vuex</em>,<em>swiper</em>,<em>axios</em>,<em>scss</em>,<em>webpack</em>,<em>jenkins</em>,<em>docker</em>#
                                     </p>
                                 </div>
                             </div>
@@ -220,6 +220,7 @@
                                 <li><p class=section-content><i class="iconfont icon-dot"></i>精通<em>html/css/javascript</em>，熟练掌握<em>Vue</em>、<em>jQuery</em>，掌握<em>reactjs</em>、<em>angular</em>等前端框架。</p></li>
                                 <li><p class=section-content><i class="iconfont icon-dot"></i>精通<em>PC端</em>，<em>H5/APP</em>端的前端设计模式，熟悉<em>Webpack</em>、<em>gulp</em>等前端构建工具。</p></li>
                                 <li><p class=section-content><i class="iconfont icon-dot"></i>熟悉数据库基本操作，可使用<em>PHP</em>、<em>Nodejs</em>、<em>java</em>、<em>Python</em>等语言进行服务端开发。</p></li>
+                                <li><p class=section-content><i class="iconfont icon-dot"></i>熟练使用<em>docker</em>、<em>jenkins</em>等自动化构建工具</p></li>
                                 <li><p class=section-content><i class="iconfont icon-dot"></i>重视<em>用户体验</em>，有一定<em>视觉设计</em>能力。</p></li>
                                 <!-- <li><p class=section-content><i class="iconfont icon-dot"></i>懂<em>设计</em>，重视<em>用户体验</em>与<em>代码可维护性</em>。</p></li> -->
                                 <!-- <li><p class=section-content><i class="iconfont icon-dot"></i>善于使用<em>CSS特性</em><em>打包</em><em>代码优化</em><em>合并请求</em>等方式来进行前端优化。</p></li> -->
