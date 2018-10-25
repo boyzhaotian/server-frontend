@@ -82,15 +82,52 @@
                             <span class=section-title-r></span>
                         </header>
                         <div class=section-bd>
+                              <div class=item>
+                                <header class=item-hd>
+                                    <span class=item-time>2018.10 ~ 至今</span>
+                                    <a class="btn item-more" href="https://m.sinochem-fjxs.com/weixin/filter/common/redirectFlag?flag=memberCenter&sbxid=wx175f54b5df1158b4" target="_blank">小化加油</a>
+                                    <h3 class=item-name>赵大仁 · SKY ZHAO - 个人主页</h3>
+                                </header>
+                                <div class=item-bd>
+                                    <p class=section-content>
+                                        <strong>monile+PC</strong>
+                                        
+                                          把新技术、新设计运用起来制作的站点，及博客、作品集、个人小站于一身，希望进来的朋友们能有不错的体验^
+                                          <br>网站会不定期更新，大家可以提出宝贵的意见来帮助丰富小站内容，优化用户体验。<a href="">我要提意见！</a>
+                                        
+                                        <br>#<em>vue</em>,<em>vue-router</em>,<em>vuex</em>,<em>swiper</em>,<em>axios</em>,<em>scss</em>,<em>webpack</em>#
+                                    </p>
+                                </div>
+                            </div>
+
                             <div class=item>
                                 <header class=item-hd>
                                     <span class=item-time>2018.05 ~ 至今</span>
-                                    <a class="btn item-more" href="https://m.sinochem-fjxs.com/weixin/filter/common/redirectFlag?flag=memberCenter&sbxid=wx175f54b5df1158b4" target="_blank">Link</a>
+                                    <a class="btn item-more" href="https://m.sinochem-fjxs.com/weixin/filter/common/redirectFlag?flag=memberCenter&sbxid=wx175f54b5df1158b4" target="_blank">小化加油</a>
                                     <h3 class=item-name>小化加油 - 公众号</h3>
                                 </header>
                                 <div class=item-bd>
                                     <p class=section-content>
-                                        <strong>前端负责人</strong>
+                                        <strong>前端负责人</strong><strong>mobile</strong><strong>toC</strong>
+                                        
+                                          为解决项目加载慢的遗留问题，对项目进行了性能优化，包括入口拆分以及依赖文件的提取。
+                                          针对地图、弹窗、选择器等功能制作公共组件。
+                                          优化开发、发版流程，管理git分支，部署自动化发版工具。
+                                        
+                                        <br>#<em>vue</em>,<em>vue-router</em>,<em>vuex</em>,<em>better-scroll</em>,<em>axios</em>,<em>scss</em>,<em>webpack</em>,<em>jenkins</em>#
+                                    </p>
+                                </div>
+                            </div>
+                            <div class=item>
+                                <header class=item-hd>
+                                    <span class=item-time>2018.05 ~ 至今</span>
+                                    <!-- <a class="btn item-more" href="https://m.sinochem-fjxs.com/weixin/filter/common/redirectFlag?flag=memberCenter&sbxid=wx175f54b5df1158b4" target="_blank">小化加油</a> -->
+                                    <h3 class=item-name>管理平台/大数据展示平台</h3>
+                                </header>
+                                <div class=item-bd>
+                                    <p class=section-content>
+                                        <strong>前端工程师</strong><strong>PC</strong><strong>toB</strong>
+                                        <br>#<em>vue</em>,<em>vue-router</em>,<em>vuex</em>,<em>axios</em>,<em>element-ui</em>,<em>echarts</em>,<em>scss</em>,<em>webpack</em>,<em>jenkins</em>#
                                     </p>
                                 </div>
                             </div>
@@ -102,19 +139,20 @@
                                 </header>
                                 <div class=item-bd>
                                     <p class=section-content>
-                                        <strong>前端负责人</strong>为推动公司前端技术栈的发展，该项目选择使用<em>VUE</em>来进行开发。由于项目周期短规模不大，且<em>VUE</em>的学习曲线平缓而快，社区内容丰富适合作为提升技术栈的首选。
+                                        <strong>前端负责人</strong>为推动公司前端技术栈的发展，首次选择使用<em>vue</em>进行开发。由于项目周期短规模不大，且<em>VUE</em>的学习曲线平缓而快，社区内容丰富适合作为提升技术栈的首选。
                                     </p>
                                 </div>
                             </div> -->
                             <div class=item>
                                 <header class=item-hd>
-                                    <span class=item-time>2017.07 ~ 2017.10</span>
+                                    <span class=item-time>2017.07 ~ 2018.04</span>
                                     <a class="btn item-more" href='http://theory.cloud.gmw.cn/templates/app/index.html' target=_blank>Link</a>
                                     <h3 class=item-name>光明日报理论号</h3>
                                 </header>
                                 <div class=item-bd>
                                     <p class=section-content>
-                                        <strong>网址：theory.cloud.gmw.cn/templates/app/index.html</strong><strong>前端工程师</strong>新闻信息类站点，<em>混合式APP</em>内容。页面元素丰富，曾经历多次改版。布局复杂，针对<em>安卓</em>和<em>iOS</em>大部分机型进行了适配，解决了大量兼容性问题。
+                                        <strong>前端负责人</strong><strong>混合式app</strong><strong>网址：theory.cloud.gmw.cn/templates/app/index.html</strong>政治正确的新闻资讯站点，经历多次改版，解决了大量兼容性问题。工作中对组件的概念逐渐清晰，提炼了一些组件及公共方法。
+                                        <br>#<em>jquery</em>,<em>tmodjs</em>,<em>owl-carousel</em>#
                                     </p>
                                 </div>
                             </div>
@@ -126,7 +164,7 @@
                                 </header>
                                 <div class=item-bd>
                                     <p class=section-content>
-                                        <strong>网址：ws.gmym.cn/app/index.php?i=76</strong><strong>前端工程师</strong>由于项目基于公司原有平台开发，后端和控制器使用<em>PHP</em>编写。前端使用<em>H5</em>和<em>jQuery</em>框架快速搭建而成。
+                                        <strong>前端负责人</strong><strong>网址：ws.gmym.cn/app/index.php?i=76</strong>由于项目基于公司原有平台开发，后端和控制器使用<em>PHP</em>编写。前端使用<em>H5</em>和<em>jQuery</em>框架快速搭建而成。
                                     </p>
                                 </div>
                             </div>
