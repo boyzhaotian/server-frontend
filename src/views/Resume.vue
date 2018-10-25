@@ -93,7 +93,7 @@
                                         <strong>monile+PC</strong>
                                         
                                           把新技术、新设计运用起来制作的站点，及博客、作品集、个人小站于一身，希望进来的朋友们能有不错的体验^
-                                          <br>网站会不定期更新，大家可以提出宝贵的意见来帮助丰富小站内容，优化用户体验。<a href="">我要提意见！</a>
+                                          <br>网站会不定期更新，大家可以提出宝贵的意见来帮助丰富小站内容，优化用户体验。<span style="color:#00b38a" @click="$router.push({name:'contact'})">我要提意见！</span>
                                         
                                         <br>#<em>vue</em>,<em>vue-router</em>,<em>vuex</em>,<em>swiper</em>,<em>axios</em>,<em>scss</em>,<em>webpack</em>#
                                     </p>
