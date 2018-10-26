@@ -165,7 +165,7 @@
                                 <div class=item-bd>
                                     <p class=section-content>
                                         <strong>前端负责人</strong><strong>网址：ws.gmym.cn/app/index.php?i=76</strong>
-                                        由于项目基于公司原有平台开发，后端和控制器使用<em>PHP</em>编写。前端使用<em>H5</em>和<em>jQuery</em>框架快速搭建而成。
+                                        <!-- 由于项目基于公司原有平台开发，后端和控制器使用<em>PHP</em>编写。前端使用<em>H5</em>和<em>jQuery</em>框架快速搭建而成。 -->
                                         <br>#<em>php</em>,<em>jquery</em>,<em>tmodjs</em>,<em>owl-carousel</em>#
                                     </p>
                                 </div>
