@@ -152,7 +152,7 @@
                                 <div class=item-bd>
                                     <p class=section-content>
                                         <strong>前端负责人</strong><strong>混合式app</strong><strong>网址：theory.cloud.gmw.cn/templates/app/index.html</strong>政治正确的新闻资讯站点，经历多次改版，解决了大量兼容性问题。工作中对组件的概念逐渐清晰，提炼了一些组件及公共方法。
-                                        <br>#<em>jquery</em>,<em>tmodjs</em>,<em>owl-carousel</em>#
+                                        <br>#<em>php</em>,<em>jquery</em>,<em>tmodjs</em>,<em>owl-carousel</em>#
                                     </p>
                                 </div>
                             </div>
@@ -164,7 +164,9 @@
                                 </header>
                                 <div class=item-bd>
                                     <p class=section-content>
-                                        <strong>前端负责人</strong><strong>网址：ws.gmym.cn/app/index.php?i=76</strong>由于项目基于公司原有平台开发，后端和控制器使用<em>PHP</em>编写。前端使用<em>H5</em>和<em>jQuery</em>框架快速搭建而成。
+                                        <strong>前端负责人</strong><strong>网址：ws.gmym.cn/app/index.php?i=76</strong>
+                                        由于项目基于公司原有平台开发，后端和控制器使用<em>PHP</em>编写。前端使用<em>H5</em>和<em>jQuery</em>框架快速搭建而成。
+                                        <br>#<em>php</em>,<em>jquery</em>,<em>tmodjs</em>,<em>owl-carousel</em>#
                                     </p>
                                 </div>
                             </div>
