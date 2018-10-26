@@ -179,7 +179,8 @@
                                     <p class=section-content>
                                         <strong>前端工程师</strong>#nodejs,slim,less,react,redist,mongo#
                                         整个项目基于<em>Ruby on Rails</em>开发，前端技术栈包括<em>react</em>、<em>slim</em>、<em>less</em>。
-                                        后台基于<em>ECharts</em>实现大量数据可视化模块。                                
+                                        后台基于<em>ECharts</em>实现大量数据可视化模块。
+                                        <br>#<em>ruby</em>,<em>react</em>,<em>slim</em>,<em>less</em>,<em>echarts</em>#
                                     </p>
                                 </div>
                             </div>
