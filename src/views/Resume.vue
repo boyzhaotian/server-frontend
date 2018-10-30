@@ -85,15 +85,15 @@
                               <div class=item>
                                 <header class=item-hd>
                                     <span class=item-time>2018.10 ~ 至今</span>
-                                    <a class="btn item-more" href="https://m.sinochem-fjxs.com/weixin/filter/common/redirectFlag?flag=memberCenter&sbxid=wx175f54b5df1158b4" target="_blank">小化加油</a>
-                                    <h3 class=item-name>赵大仁 · SKY ZHAO - 个人主页</h3>
+                                    <a class="btn item-more" href="zhaosky.cn" target="_blank">zhaosky.cn</a>
+                                    <h3 class=item-name>赵大仁 · SKY ZHAO</h3>
                                 </header>
                                 <div class=item-bd>
                                     <p class=section-content>
                                         <strong>mobile+PC</strong>
                                         
-                                          把新技术、新设计运用起来制作的站点，及博客、作品集、个人小站于一身，希望进来的朋友们能有不错的体验^
-                                          <br>网站会不定期更新，大家可以提出宝贵的意见来帮助丰富小站内容，优化用户体验。<span style="color:#00b38a" @click="$router.push({name:'contact'})">我要提意见！</span>
+                                          个人主页，会不定期更新，欢迎大家提出宝贵的意见来帮助丰富小站内容，优化用户体验。
+                                          <br><span style="color:#00b38a" @click="$router.push({name:'contact'})">我要提意见！</span>
                                         
                                         <br>#<em>vue</em>,<em>vue-router</em>,<em>vuex</em>,<em>swiper</em>,<em>axios</em>,<em>scss</em>,<em>webpack</em>,<em>jenkins</em>,<em>docker</em>#
                                     </p>
@@ -110,11 +110,11 @@
                                     <p class=section-content>
                                         <strong>前端负责人</strong><strong>mobile</strong><strong>toC</strong>
                                         
-                                          为解决项目加载慢的遗留问题，对项目进行了性能优化，包括入口拆分以及依赖文件的提取。
-                                          针对地图、弹窗、选择器等功能制作公共组件。
+                                          对项目进行入口拆分以及依赖文件的提取，解决了首屏加载慢的遗留问题。
+                                          针对地图、弹窗、选择器、滑动容器等功能制作公共组件。
                                           优化开发、发版流程，管理git分支，部署自动化发版工具。
                                         
-                                        <br>#<em>vue</em>,<em>vue-router</em>,<em>vuex</em>,<em>better-scroll</em>,<em>axios</em>,<em>scss</em>,<em>webpack</em>,<em>jenkins</em>#
+                                        <br>#<em>vue</em>,<em>vue-router</em>,<em>vuex</em>,<em>better-scroll</em>,<em>axios</em>,<em>scss</em>,<em>webpack</em>,<em>jenkins</em>,<em>docker</em>#
                                     </p>
                                 </div>
                             </div>
@@ -127,7 +127,10 @@
                                 <div class=item-bd>
                                     <p class=section-content>
                                         <strong>前端工程师</strong><strong>PC</strong><strong>toB</strong>
-                                        <br>#<em>vue</em>,<em>vue-router</em>,<em>vuex</em>,<em>axios</em>,<em>element-ui</em>,<em>echarts</em>,<em>scss</em>,<em>webpack</em>,<em>jenkins</em>#
+
+                                          图表、表单类开发，包含大量复杂表单交互的处理。
+                                        
+                                        <br>#<em>vue</em>,<em>vue-router</em>,<em>axios</em>,<em>element-ui</em>,<em>echarts</em>,<em>scss</em>,<em>webpack</em>,<em>jenkins</em>#
                                     </p>
                                 </div>
                             </div>
@@ -146,7 +149,7 @@
                             <div class=item>
                                 <header class=item-hd>
                                     <span class=item-time>2017.07 ~ 2018.04</span>
-                                    <a class="btn item-more" href='http://theory.cloud.gmw.cn/templates/app/index.html' target=_blank>Link</a>
+                                    <a class="btn item-more" href='http://theory.cloud.gmw.cn/templates/app/index.html' target=_blank>理论号</a>
                                     <h3 class=item-name>光明日报理论号</h3>
                                 </header>
                                 <div class=item-bd>
@@ -160,11 +163,13 @@
                                 <header class=item-hd>
                                     <span class=item-time>2016.12</span>
                                     <a class="btn item-more" href='http://ws.gmym.cn/app/index.php?i=76' target=_blank>微信官网</a>
+                                    洲际酒店微网站项目
                                     <h3 class=item-name>北京三里屯通盈中心洲际酒店</h3>
                                 </header>
                                 <div class=item-bd>
                                     <p class=section-content>
                                         <strong>前端负责人</strong><strong>网址：ws.gmym.cn/app/index.php?i=76</strong>
+
                                         <!-- 由于项目基于公司原有平台开发，后端和控制器使用<em>PHP</em>编写。前端使用<em>H5</em>和<em>jQuery</em>框架快速搭建而成。 -->
                                         <br>#<em>php</em>,<em>jquery</em>,<em>tmodjs</em>,<em>owl-carousel</em>#
                                     </p>
@@ -177,10 +182,11 @@
                                 </header>
                                 <div class=item-bd>
                                     <p class=section-content>
-                                        <strong>前端工程师</strong>#nodejs,slim,less,react,redist,mongo#
-                                        整个项目基于<em>Ruby on Rails</em>开发，前端技术栈包括<em>react</em>、<em>slim</em>、<em>less</em>。
-                                        后台基于<em>ECharts</em>实现大量数据可视化模块。
-                                        <br>#<em>ruby</em>,<em>react</em>,<em>slim</em>,<em>less</em>,<em>echarts</em>#
+                                        <strong>前端工程师</strong>
+                                          接触react的第一个项目，
+
+
+                                        <br>#<em>rubyonrails</em>,<em>react</em>,<em>slim</em>,<em>less</em>,<em>echarts</em>#
                                     </p>
                                 </div>
                             </div>
@@ -191,9 +197,11 @@
                                 </header>
                                 <div class=item-bd>
                                     <p class=section-content>
-                                        <strong>前端工程师</strong>该项目客户端为<em>混合式APP</em>，项目整体基于<em>Nodejs</em>搭建，并使用了Js的转译语言<em>CoffeeScript（CS）</em>进行开发。
+                                        <strong>前端工程师</strong><strong>混合式APP</strong>
+                                        项目整体基于<em>Nodejs</em>搭建，并使用了Js的转译语言<em>CoffeeScript（CS）</em>进行开发。
                                         客户端的Web部分采用了<em>Backbone</em>框架，后端则使用了<em>Express</em>。
                                         在这个项目中，我初识了Node环境，并接触了大量新技术。包括项目中使用的转译语言CS，前端框架，Node框架以及css预处理语言Less。完成该项目时，我原生代码和jQuery已运用熟练，也为之后Node全栈的学习打下了基础。
+                                        <br>#<em>jquery</em>,<em>coffeescript</em>,<em>backbone</em>,<em>express</em>,<em>underscore</em>#
                                     </p>
                                 </div>
                             </div>
