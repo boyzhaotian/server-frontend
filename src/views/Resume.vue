@@ -1,6 +1,6 @@
 <template>
     <div>
-        <a class=pdf href=resume.pdf><i class="iconfont icon-pdf"></i> PDF简历</a>
+        <a class=pdf href=resume.png><i class="iconfont icon-pdf"></i> 简历长图</a>
         <p class=last-modified>最后更新时间：2018年2月</p>
         <div class=content>
             <div class=content-bd>
