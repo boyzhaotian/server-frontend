@@ -154,8 +154,9 @@
                                 </header>
                                 <div class=item-bd>
                                     <p class=section-content>
-                                        <strong>前端负责人</strong><strong>混合式app</strong><strong>网址：theory.cloud.gmw.cn/templates/app/index.html</strong>政治正确的新闻资讯站点，经历多次改版，解决了大量兼容性问题。工作中对组件的概念逐渐清晰，提炼了一些组件及公共方法。
-                                        <br>#<em>php</em>,<em>jquery</em>,<em>tmodjs</em>,<em>owl-carousel</em>#
+                                        <strong>前端负责人</strong><strong>混合式app</strong><strong>网址：theory.cloud.gmw.cn/templates/app/index.html</strong>
+                                        政治正确的新闻资讯站点，经历多次改版，解决了大量兼容性问题。
+                                        <br>#<em>php</em>,<em>jquery</em>,<em>jsbridge</em>,<em>tmodjs</em>,<em>owl-carousel</em>#
                                     </p>
                                 </div>
                             </div>
@@ -183,8 +184,6 @@
                                 <div class=item-bd>
                                     <p class=section-content>
                                         <strong>前端工程师</strong>
-                                          接触react的第一个项目，
-
 
                                         <br>#<em>rubyonrails</em>,<em>react</em>,<em>slim</em>,<em>less</em>,<em>echarts</em>#
                                     </p>
@@ -198,10 +197,8 @@
                                 <div class=item-bd>
                                     <p class=section-content>
                                         <strong>前端工程师</strong><strong>混合式APP</strong>
-                                        项目整体基于<em>Nodejs</em>搭建，并使用了Js的转译语言<em>CoffeeScript（CS）</em>进行开发。
-                                        客户端的Web部分采用了<em>Backbone</em>框架，后端则使用了<em>Express</em>。
-                                        在这个项目中，我初识了Node环境，并接触了大量新技术。包括项目中使用的转译语言CS，前端框架，Node框架以及css预处理语言Less。完成该项目时，我原生代码和jQuery已运用熟练，也为之后Node全栈的学习打下了基础。
-                                        <br>#<em>jquery</em>,<em>coffeescript</em>,<em>backbone</em>,<em>express</em>,<em>underscore</em>#
+                                        在熟练使用ES5、jQuery、Bootstrap的前提下，初识NodeJS环境，学习了运行环境、包等概念。
+                                        <br>#<em>jquery</em>,<em>jsbridge</em>,<em>coffeescript</em>,<em>backbone</em>,<em>express</em>,<em>underscore</em>#
                                     </p>
                                 </div>
                             </div>
@@ -212,7 +209,9 @@
                                 </header>
                                 <div class=item-bd>
                                     <p class=section-content>
-                                        <strong>前端工程师</strong>大四阶段创业项目，平台基于<em>ThinkPHP</em><em>jQuery</em>等框架搭建。我在团队中负责前后端开发，并参与路演等内容。
+                                        <strong>前端工程师</strong>
+                                        大四阶段与学长的创业项目，负责前后端开发，及路演等内容。
+                                        <br>#<em>php</em>,<em>thinkphp</em>,<em>jquery</em>#
                                     </p>
                                 </div>
                             </div>
