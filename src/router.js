@@ -18,7 +18,6 @@ export default new Router({
       path: '/',
       redirect: 'home',
       name: 'root',
-      component: Home
     },
     {
       path: '/about',
@@ -29,14 +28,18 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
     },
     {
-      path: '/home',
-      name: 'home',
-      component: Home
+      path: '/about/resume',
+      name: 'resume',
+      component: Resume
     },
     {
       path: '/resume',
-      name: 'resume',
-      component: Resume
+      redirect: 'resume',
+    },
+    {
+      path: '/home',
+      name: 'home',
+      component: Home
     },
     {
       path: '/blog',

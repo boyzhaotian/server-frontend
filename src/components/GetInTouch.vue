@@ -11,7 +11,6 @@
                     <p class="lead">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
                     <p><a @click="$router.push({name:'contact'})" class="btn btn-primary">了解更多</a></p>
                 </div>
-                
             </div>
         </div>
     </div>

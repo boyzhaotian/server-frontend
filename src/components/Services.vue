@@ -1,7 +1,7 @@
 <template>
-    <narrow-content title="our serivces">
+    <narrow-content title="">
         <service-item icon='icon-settings' title="Strategy策略"></service-item>
-        <service-item icon='icon-search4' title="Explore发现"></service-item>
+        <service-item icon='icon-search4' title="Explore探索"></service-item>
         <service-item icon='icon-paperplane' title="Direction方向"></service-item>
         <service-item icon='icon-params' title="Expertise专业"></service-item>
     </narrow-content>

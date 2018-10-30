@@ -16,7 +16,7 @@ export default {
     props: {
         img: {
             type: String,
-            default: '/static/img/img-5.jpg'
+            default: '/static/img/img-'+Math.ceil(Math.random()*5)+'.jpg'
         },
         title: {
             type: String,

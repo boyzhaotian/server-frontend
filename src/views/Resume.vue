@@ -93,7 +93,7 @@
                                         <strong>mobile+PC</strong>
                                         
                                           个人主页，会不定期更新，欢迎大家提出宝贵的意见来帮助丰富小站内容，优化用户体验。
-                                          <br><span style="color:#00b38a" @click="$router.push({name:'contact'})">我要提意见！</span>
+                                          <br><span class="green" @click="$router.push({name:'contact'})">我要提意见！</span>
                                         
                                         <br>#<em>vue</em>,<em>vue-router</em>,<em>vuex</em>,<em>swiper</em>,<em>axios</em>,<em>scss</em>,<em>webpack</em>,<em>jenkins</em>,<em>docker</em>#
                                     </p>

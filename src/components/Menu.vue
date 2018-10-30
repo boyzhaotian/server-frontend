@@ -7,7 +7,7 @@
             <nav id="main-menu" role="navigation">
                 <ul>
                     <li :class="{ active: checkPath('home') }" @click="go('home')"><a @click="go('home')">Home主页</a></li>
-                    <li :class="{ active: checkPath('resume') }" @click="go('resume')"><a @click="go('resume')">Resume简历</a></li>
+                    <!-- <li :class="{ active: checkPath('resume') }" @click="go('resume')"><a @click="go('resume')">Resume简历</a></li> -->
                     <li :class="{ active: checkPath('blog') }" @click="go('blog')"><a @click="go('blog')">Blog博客</a></li>
                     <li :class="{ active: checkPath('portfolio') }" @click="go('portfolio')"><a @click="go('portfolio')">Portfolio作品集</a></li>
                     <li :class="{ active: checkPath('about') }" @click="go('about')"><a @click="go('about')">About关于</a></li>
