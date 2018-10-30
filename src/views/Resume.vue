@@ -300,7 +300,7 @@
                         <h3>本科 / 2015年毕业</h3>
                     </section>
 
-                    <section class="skill-level">
+                    <!-- <section class="skill-level">
                         <h3>英语</h3>
                         <div class="item i-html">
                             <i class="in"></i><i class="out"></i>
@@ -321,7 +321,7 @@
                         <div class="item i-ps">
                             <i class="in"></i><i class="out"></i>
                         </div>
-                    </section>
+                    </section> -->
 
                     <section class=contact>
                         <ul>
