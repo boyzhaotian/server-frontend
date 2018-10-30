@@ -1,23 +1,20 @@
 <template>
     <div class="blog">
-        <div class="narrow-content">
-            <h2 class="heading animate-box" data-animate-effect="fadeInLeft">Blog博客
-            </h2>
-				<div class="row row-bottom-padded-md">
-                    <blog-item></blog-item>
-                    <blog-item></blog-item>
-                    <blog-item></blog-item>
-				</div>
-        </div>
+        <narrow-content title="Blog博客">
+            <blog-item></blog-item>
+            <blog-item></blog-item>
+            <blog-item></blog-item>
+        </narrow-content>
         <get-in-touch></get-in-touch>
     </div>
 </template>
 <script>
-import BlogItem from '../components/BlogItem.vue';
+import BlogItem from '@/components/BlogItem'
 import GetInTouch from '@/components/GetInTouch'
+import NarrowContent from '@/components/NarrowContent'
 export default {
     components: {
-        BlogItem, GetInTouch
+        BlogItem, GetInTouch, NarrowContent
     }
 }
 </script>
