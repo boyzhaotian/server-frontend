@@ -1,6 +1,6 @@
 <template>
 	<div class="home">
-		<!-- <img alt="Vue logo" src="../assets/img/logo-sky-blue.png"> -->
+		<div v-show="false"><img alt="Vue logo" src="../assets/img/logo-sky-blue.png"></div>
 		<Slider/>
 		<Services/>
 		<narrow-content title="recent blog">

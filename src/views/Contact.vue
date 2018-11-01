@@ -63,7 +63,7 @@
                                     <textarea v-model="content" name="" id="message" cols="30" rows="7" class="form-control" placeholder="内容"></textarea>
                                 </div>
                                 <div class="form-group">
-                                    <input @click="sendMessage" type="submit" class="btn btn-primary btn-md" value="发送信息">
+                                    <input @click="sendMessage" type="submit" class="btn btn-primary btn-md" value="发送邮件">
                                 </div>
                             </div>
                             
