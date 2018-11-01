@@ -34,7 +34,9 @@ export default new Router({
     },
     {
       path: '/resume',
-      redirect: 'resume',
+      redirect: {
+        name: 'resume'
+      },
     },
     {
       path: '/home',
