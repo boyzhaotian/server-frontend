@@ -2,8 +2,8 @@
 	<div class="home">
 		<div v-show="false"><img alt="Vue logo" src="../assets/img/logo-sky-blue.png"></div>
 		<Slider/>
-		<Services/>
-		<narrow-content title="recent blog">
+		<!-- <Services/> -->
+		<narrow-content title="recent blog" v-if="blogList.length">
 			<blog-item/>
 			<blog-item/>
 			<blog-item/>
@@ -23,6 +23,14 @@ export default {
 	name: 'home',
 	components: {
 		Slider, Services, GetInTouch, NarrowContent, BlogItem
-	}
+	},
+	data() {
+		return {
+			blogList: []
+		}
+	},
+	mounted() {
+
+	},
 }
 </script>

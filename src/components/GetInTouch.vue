@@ -8,7 +8,7 @@
             </div>
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-                    <p class="lead">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                    <p class="lead">小站目前内容有限，如需了解更多可点击下方按钮</p>
                     <p><a @click="$router.push({name:'contact'})" class="btn btn-primary">了解更多</a></p>
                 </div>
             </div>
