@@ -33,6 +33,16 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-4">
+                        <div class="feature feature-sm animate-box" data-animate-effect="fadeInLeft">
+                            <div class="icon">
+                                <i class="icon-phone"></i>
+                            </div>
+                            <div class="text">
+                                <p><span class="green" @click="$router.push({name:'resume'})">→个人简历点击这里←</span></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -81,7 +91,7 @@ let appid = '1400151932'
 let appkey = '09af7b453d651363a4a93b8c2ff01327'
 import QcloudSms from 'qcloudsms_js'
 import weui from 'weui.js';
-import axios from 'axios'
+// import axios from 'axios'
 export default {
     data() {
         return {
@@ -90,6 +100,9 @@ export default {
             mobile: '',
             content: '',
         }
+    },
+    mounted() {
+        console.log(this.API);
     },
     methods: {
         sendMessage() {
@@ -105,7 +118,12 @@ export default {
                 <br>内容：${this.content}</div>`, this.sendMail)
         },
         sendMail() {
-            axios.post('/api/mail',this.$data,(res)=>{
+            this.API.sendMail(this.$data,(res)=>{
+                if ( res.status === 'success' ) {
+                    weui.alert('发送成功！')
+                } else {
+                    weui.alert('发送失败！Error:'+res.message)
+                }
                 console.log(res);
             })
         },
